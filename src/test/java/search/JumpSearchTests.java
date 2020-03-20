@@ -1,8 +1,6 @@
-package searches;
+package search;
 
-import groovy.json.internal.ArrayUtils;
 import org.junit.Test;
-import sun.security.util.ArrayUtil;
 
 import static org.junit.Assert.*;
 

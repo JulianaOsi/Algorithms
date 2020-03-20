@@ -1,4 +1,4 @@
-package searches;
+package search;
 
 import java.util.Arrays;
 
@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class JumpSearch {
     public static int search(int[] arr, int val) {
-        int jump = (int) Math.round(Math.sqrt(arr.length));
+        int jump = (int) Math.round(Math.floor(Math.sqrt(arr.length)));
         int left = 0;
         int right = Math.min(jump, arr.length - 1);
         while (right < arr.length && arr[right] < val) {

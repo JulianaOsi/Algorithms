@@ -1,4 +1,4 @@
-package searches;
+package search;
 
 /**
  * Worst-case 	O(n)
