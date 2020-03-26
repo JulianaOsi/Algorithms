@@ -1,4 +1,4 @@
-package sorting;
+package sort;
 
 /**
  * Worst-case 	O(n^2)

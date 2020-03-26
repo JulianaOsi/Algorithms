@@ -1,4 +1,4 @@
-package sorting;
+package sort;
 
 /**
  * Worst-case 	O(n^2)
@@ -7,6 +7,7 @@ package sorting;
  * stable
  */
 public class ShakerSort {
+
     public static int[] sort(int[] arr) {
         for (int i = 0; i < arr.length/2; i++) {
             boolean isSwapped = false;

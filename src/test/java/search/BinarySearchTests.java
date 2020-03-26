@@ -12,11 +12,11 @@ public class BinarySearchTests {
 
     @Test
     public void search() {
-        assertEquals(0, LinearSearch.search(arr1, 2));
-        assertEquals(1, LinearSearch.search(sortedArr1, 2));
-        assertEquals(2, LinearSearch.search(sortedArr2, 3));
-        assertEquals(3, LinearSearch.search(sortedArr2, 4));
-        assertEquals(-1, LinearSearch.search(sortedArr1, 5));
+        assertEquals(0, BinarySearch.search(arr1, 2));
+        assertEquals(1, BinarySearch.search(sortedArr1, 2));
+        assertEquals(2, BinarySearch.search(sortedArr2, 3));
+        assertEquals(3, BinarySearch.search(sortedArr2, 4));
+        assertEquals(-1, BinarySearch.search(sortedArr1, 5));
     }
 
     @Test

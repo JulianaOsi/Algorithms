@@ -1,4 +1,4 @@
-package sorting;
+package sort;
 
 /**
  * Worst-case 	O(n^2)
@@ -7,6 +7,7 @@ package sorting;
  * stable
  */
 public class BubbleSort {
+
     public static int[] sort(int[] arr) {
         boolean isSwapped = false;
         for (int i = 0; i < arr.length - 1; i++) {
