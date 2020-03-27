@@ -1,5 +1,14 @@
 package sort;
 
+/**
+ * Worst-case 	O(n^2) (depends on the pivot)
+ * in the worst case the array is split into 1 and n-1 elements
+ * Best-case 	O(n log n)
+ * log n - recursion depth
+ * n - number of comparisons at each level
+ * Average 	    O(n log n)
+ * unstable
+ */
 public class QuickSort {
 
     public static void sort(int[] arr, int first, int last) {
