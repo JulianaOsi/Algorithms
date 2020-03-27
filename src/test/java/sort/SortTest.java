@@ -50,4 +50,19 @@ public class SortTest {
         assertArrayEquals(new int[]{1, 2, 3}, ShuttleSort.sort(arr3));
         assertArrayEquals(new int[]{0, 1, 3, 4, 5}, ShuttleSort.sort(arr4));
     }
+
+    @Test
+    public void quickSortTest() {
+        QuickSort.sort(arr1, 0, arr1.length - 1);
+        assertArrayEquals(new int[]{1}, arr1);
+
+        QuickSort.sort(arr2, 0, arr2.length - 1);
+        assertArrayEquals(new int[]{2, 3}, arr2);
+
+        QuickSort.sort(arr3, 0, arr3.length - 1);
+        assertArrayEquals(new int[]{1, 2, 3}, arr3);
+
+        QuickSort.sort(arr4, 0, arr4.length - 1);
+        assertArrayEquals(new int[]{0, 1, 3, 4, 5}, arr4);
+    }
 }
