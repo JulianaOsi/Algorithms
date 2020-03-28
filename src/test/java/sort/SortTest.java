@@ -65,4 +65,19 @@ public class SortTest {
         QuickSort.sort(arr4, 0, arr4.length - 1);
         assertArrayEquals(new int[]{0, 1, 3, 4, 5}, arr4);
     }
+
+    @Test
+    public void MergeSortTest() {
+        MergeSort.sort(arr1, 0, arr1.length - 1);
+        assertArrayEquals(new int[]{1}, arr1);
+
+        MergeSort.sort(arr2, 0, arr2.length - 1);
+        assertArrayEquals(new int[]{2, 3}, arr2);
+
+        MergeSort.sort(arr3, 0, arr3.length - 1);
+        assertArrayEquals(new int[]{1, 2, 3}, arr3);
+
+        MergeSort.sort(arr4, 0, arr4.length - 1);
+        assertArrayEquals(new int[]{0, 1, 3, 4, 5}, arr4);
+    }
 }
