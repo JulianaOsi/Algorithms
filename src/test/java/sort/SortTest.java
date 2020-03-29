@@ -80,4 +80,12 @@ public class SortTest {
         MergeSort.sort(arr4, 0, arr4.length - 1);
         assertArrayEquals(new int[]{0, 1, 3, 4, 5}, arr4);
     }
+
+    @Test
+    public void CountingSortTest() {
+        assertArrayEquals(new int[]{1}, CountingSort.sort(arr1, 0, 5));
+        assertArrayEquals(new int[]{2, 2}, CountingSort.sort(new int[]{2, 2}, 2, 2));
+        assertArrayEquals(new int[]{2, 3, 3}, CountingSort.sort(new int[]{3, 2, 3}, 2, 3));
+        assertArrayEquals(new int[]{1, 1, 3, 4, 4}, CountingSort.sort(new int[]{4, 1, 3, 4, 1}, 0, 6));
+    }
 }
