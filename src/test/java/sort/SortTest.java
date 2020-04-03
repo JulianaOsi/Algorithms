@@ -2,6 +2,10 @@ package sort;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class SortTest {
@@ -87,5 +91,24 @@ public class SortTest {
         assertArrayEquals(new int[]{2, 2}, CountingSort.sort(new int[]{2, 2}, 2, 2));
         assertArrayEquals(new int[]{2, 3, 3}, CountingSort.sort(new int[]{3, 2, 3}, 2, 3));
         assertArrayEquals(new int[]{1, 1, 3, 4, 4}, CountingSort.sort(new int[]{4, 1, 3, 4, 1}, 0, 6));
+    }
+
+    @Test
+    public void BucketSortTest() {
+        List<Integer> unsorted1 = Arrays.asList(80,50,60,30,20,10,70,0,40,500,600,602,200,15);
+       List<Integer> expected1 = Arrays.asList(0,10,15,20,30,40,50,60,70,80,200,500,600,602);
+        List<Integer> sorted1 = BucketSort.sort(unsorted1, 0, 602);
+
+        List<Integer> unsorted2 = Arrays.asList(15, 18, 11, 20, 17, 13, 11, 16, 16, 10);
+        List<Integer> expected2 = Arrays.asList(10, 11, 11, 13, 15, 16, 16, 17, 18, 20);
+        List<Integer> sorted2 = BucketSort.sort(unsorted2, 10, 20);
+
+        List<Integer> unsorted3 = Arrays.asList(2);
+        List<Integer> expected3 = Arrays.asList(2);
+        List<Integer> sorted3 = BucketSort.sort(unsorted3, 0, 3);
+
+        assertEquals(expected1, sorted1);
+        assertEquals(expected2, sorted2);
+        assertEquals(expected3, sorted3);
     }
 }
